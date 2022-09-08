@@ -24,9 +24,9 @@ public class DataSource {
 	public void setDbType(String dbType) {
 		this.dbType = dbType;
 	}
-	@Override
-	public String toString() {
-		return "DataSource [username=" + username + ", password=" + password + ", DB-Type=" + dbType + "]";
-	}
+	
+	  @Override public String toString() { return "DataSource [username=" +
+	  username + ", password=" + password + ", DB-Type=" + dbType + "]"; }
+	 
 		
 }

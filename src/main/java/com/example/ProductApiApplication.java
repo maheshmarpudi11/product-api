@@ -56,9 +56,10 @@ public class ProductApiApplication  implements CommandLineRunner{
 	//	System.out.println("========>" +env);
 		
 		ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationBeansConfig.class);
-		DataSource dataSource = context.getBean(DataSource.class);
-		System.out.println(dataSource.getUsername());
-		System.out.println(dataSource1);
+		DataSource dataSource1 = context.getBean(DataSource.class);
+		DataSource dataSource2 = context.getBean(DataSource.class);
+		System.out.println(dataSource1.toString());
+		System.out.println(dataSource2.toString());
 		
 	}
 
