@@ -16,7 +16,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-	@GetMapping("/")
+	//@GetMapping("/")
 	public void getProducts(){
 		
 		productService.getProducts();  // null pointer exception

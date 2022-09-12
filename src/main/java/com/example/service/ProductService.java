@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 //@Component
 
 
-@RestController   // rest api controller ( reques/ res)
+/*@RestController   // rest api controller ( reques/ res)
 @Service          // service logics 
 @Repository
 @ControllerAdvice
 @Controller
-@Configuration
+@Configuration*/
 
 // verifyLoan -- exisitng loan, cbil, local or non-local, business man/ salaries -- user is 
 
