@@ -1,0 +1,30 @@
+Restful web services // producer app
+	
+	product-api / services
+	----------------------
+	 - created data
+	 
+	 REquest info: 
+	 URL : http://localhost:9090/product/newProduct
+	 Request Method : POST	
+	
+	 Request Header : content-type : application/json
+	
+	 Request Body:  
+	 {
+		"productId" : 1,
+		"productName" : "Dell",
+		"productDesc" : "i5 processor",
+		"productCost" : "15000",
+		"productCount" : 2
+	 }
+	
+	 Response info
+	 -------------
+	 
+	 Response Body : content-type:  text/html  // "product is saved with id : 001"
+	 
+	 Response Header : content-type : application/json , html/text
+	 
+	 Response Satus code : 200
+	 

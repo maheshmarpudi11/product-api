@@ -27,6 +27,8 @@ public class BookController {
 		  return "books"; 
 	  }
 	  
+	  // ModelAndView
+	  
 	  @RequestMapping("/books/{id}") 
 	  public String getBookById(Model model, @PathVariable int id) {
 		  Optional<Book> book = bookService.findBookById(id); book.ifPresent(value ->

@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 // verifyLoan -- exisitng loan, cbil, local or non-local, business man/ salaries -- user is 
 
+@Service
 public class ProductService {
 
 	public void getProducts(){
