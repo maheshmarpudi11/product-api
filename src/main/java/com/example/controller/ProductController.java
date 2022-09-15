@@ -25,8 +25,11 @@ public class ProductController {
 	public ResponseEntity<String> createProduct(@RequestBody ProductDTO productDTO){
 		
 		System.out.println(productDTO);
+		
+		
+		Integer productId = productService.createProduct(productDTO);
 	
-		String response = "product is save with id : "+productDTO.getProductId();
+		String response = "product is save with id : "+productId;
 		
 		/*
 		 * if(true) { throw new NullPointerException("test"); }

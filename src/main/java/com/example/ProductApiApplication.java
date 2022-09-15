@@ -6,12 +6,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.example.config.ApplicationBeansConfig;
 import com.example.config.beans.DataSource;
 
 @SpringBootApplication
-public class ProductApiApplication  implements CommandLineRunner{
+public class ProductApiApplication  implements CommandLineRunner
+{
 
 	public static void main(String[] args) {
 		System.out.println("Application starts..");
@@ -19,6 +21,7 @@ public class ProductApiApplication  implements CommandLineRunner{
 		SpringApplication.run(ProductApiApplication.class, args);
 		
 	}
+
 	
 	// field based injection
 	/*@Autowired
@@ -62,5 +65,7 @@ public class ProductApiApplication  implements CommandLineRunner{
 		System.out.println(dataSource2.toString());
 		
 	}
+	
+	
 
 }

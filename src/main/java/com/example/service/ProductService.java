@@ -1,5 +1,9 @@
 package com.example.service;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -8,8 +12,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.RestController;
 
-//@Component
+import com.example.dto.ProductDTO;
+import com.example.repository.ProductRepo;
 
+//@Component
 
 /*@RestController   // rest api controller ( reques/ res)
 @Service          // service logics 
@@ -23,9 +29,34 @@ import org.springframework.web.bind.annotation.RestController;
 @Service
 public class ProductService {
 
-	public void getProducts(){
+	@Autowired
+	private ProductRepo productRepo;
+	
+	/*
+	 * static Map<Integer, ProductDTO> list = new HashMap<>(); int count = 100;
+	 * static {
+	 * 
+	 * list.put(90, new ProductDTO(90,"test","test desc","1000",1));
+	 * 
+	 * }
+	 */
+
+	/*
+	 * public Integer createProduct(ProductDTO productDTO) {
+	 * 
+	 * count = count+1; productDTO.setProductId(count);
+	 * 
+	 * list.put(count, productDTO);
+	 * 
+	 * 
+	 * return productDTO.getProductId(); }
+	 */
+
+	public Integer createProduct(ProductDTO productDTO) {
 		
-		System.out.println("productService --> getProducts()");
+		ProductDTO savedProduct = productRepo.save(productDTO);
+
+		return savedProduct.getProductId();
 	}
 
 }

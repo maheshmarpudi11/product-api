@@ -10,6 +10,7 @@ import com.example.config.beans.DataSource;
 @RestController
 public class AppController {
 	
+	/*
 	@Autowired
 	private DataSource dataSource1;
 	
@@ -29,6 +30,6 @@ public class AppController {
 		
 		return dataSource1;
 	}
-	
+	*/
 
 }
