@@ -37,4 +37,8 @@ public class BookRepository {
 		return Optional.of(books.get(id));
 	}
 
+	public void save(Book book) {
+		books.put(book.getId(), book);
+	}
+
 }

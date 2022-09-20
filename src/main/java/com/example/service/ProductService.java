@@ -1,6 +1,7 @@
 package com.example.service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,11 @@ public class ProductService {
 		ProductDTO savedProduct = productRepo.save(productDTO);
 
 		return savedProduct.getProductId();
+	}
+
+	public List getAllProducts() {
+	
+		return productRepo.findAll();
 	}
 
 }

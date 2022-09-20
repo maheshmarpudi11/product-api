@@ -1,7 +1,8 @@
 package com.example.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,4 +40,12 @@ public class ProductController {
 		
 	}
 
+	@GetMapping(value="/products" , produces  = "application/json")
+	public List getAllProducts(){
+		
+		List products = productService.getAllProducts();
+		
+		return products;
+	}
+	
 }

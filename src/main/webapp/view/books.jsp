@@ -27,5 +27,14 @@
         </c:forEach>
     	</table>
     </div>
+    
+    <div align="left">
+    	<form action="/addBook" method="post">
+    		<label>Book Id :</label> <input type="number" name="id"/> </br>
+    		<label>Book Name :</label> <input type="text" name="name"/> </br>
+    		<label>Book Author :</label> <input type="text" name="author"/> </br>
+    		<input type="submit" value="Add Record">
+    	</form>
+    </div>
 </body>
 </html>

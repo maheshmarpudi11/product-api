@@ -36,4 +36,14 @@ public class BookController {
 		  return "book"; 
 	  }
 	 
+	  
+	  @RequestMapping("/addBook")
+	  public String addBook(Model model, Book book) {
+		  bookService.addBook(book);
+		  
+		  List<Book> books = bookService.listOfBooks();
+		  model.addAttribute("books", books);
+		  
+		  return "books";
+	  }
 }
