@@ -65,4 +65,29 @@ public class ProductService {
 		return productRepo.findAll();
 	}
 
+	public ProductDTO updateProductInfo(ProductDTO productDTO) {
+		
+		return productRepo.save(productDTO);
+	}
+
+	public String deleteProduct(Integer id) {
+
+		String response;
+		
+		if(id == null) {
+			return "product id is null";
+		}
+		else {
+			productRepo.deleteById(id);
+			response = "product is deleted with id : "+id;
+		}
+		
+		return response;
+	}
+
+	public List<ProductDTO> searchProductByname(String name) {
+
+		return productRepo.searchByProductName(name);
+	}
+
 }
