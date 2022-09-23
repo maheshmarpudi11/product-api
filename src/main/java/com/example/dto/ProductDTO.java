@@ -6,6 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 
 @Entity
 @Table(name="T_PRODUCT")
@@ -16,10 +20,14 @@ public class ProductDTO {
 	private Integer productId;
 	
 	@Column(name="P_NAME")
+	@NotNull(message = "productname can't be null")
+	@NotEmpty(message = " prodctname can't be empty.")
 	private String productName;
+	
 	private String productDesc;
 	private String productCost;
-	private Integer productCount;
+	//@Size(min = 5,max = 10,message = "product count should be between 5 to 10." )
+	private int productCount;
 	
 	public ProductDTO() {
 	}

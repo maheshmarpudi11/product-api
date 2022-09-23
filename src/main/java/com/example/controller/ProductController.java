@@ -2,9 +2,12 @@ package com.example.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +25,7 @@ import com.example.service.ProductService;
 
 @RestController
 @RequestMapping("/product/")
+@Validated
 public class ProductController {
 	
 	@Autowired
@@ -29,7 +33,7 @@ public class ProductController {
 	
 	// Rest client - ARC, postman   // /product//newProduct
 	@PostMapping(value = "/newProduct", consumes = "application/json")
-	public ResponseEntity<String> createProduct(@RequestBody ProductDTO productDTO){
+	public ResponseEntity<String> createProduct(@Valid @RequestBody ProductDTO productDTO){
 		
 		System.out.println(productDTO);
 		
@@ -56,7 +60,7 @@ public class ProductController {
 	
 	
 	@PutMapping(value = "/updateProduct", consumes = "application/json")
-	public ResponseEntity<ProductDTO> updateProductInfo(@RequestBody ProductDTO productDTO) {
+	public ResponseEntity<ProductDTO> updateProductInfo(@Valid @RequestBody ProductDTO productDTO) {
 		
 		ProductDTO productResponse = productService.updateProductInfo(productDTO);
 		
@@ -95,7 +99,7 @@ public class ProductController {
 	public ResponseEntity<ErrorResponse> catchRuntimeException(RuntimeException e){
 		
 		ErrorResponse er = new ErrorResponse();
-		er.setErrorMsg(e.getMessage());
+		er.setErrorDesc(e.getMessage());
 		er.setErrorCode("301");
 		
 		return new ResponseEntity<ErrorResponse>(er,HttpStatus.INTERNAL_SERVER_ERROR);  // error object and 500

@@ -47,6 +47,33 @@ URL : http://localhost:9090/product/newProduct
 	 }
 
 
+---------------- Bean Validation ----------------------------------------------
+
+1. Add below dependency in pom.xml file
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+2. Add Bean validation annotations in Bean class
+		@NotNull, @NotEmpty, @Email 
+
+3. Add @Valid Annotation in controller 
+
+4. Handle validation Response 
+
+
+------------------ loggers -----------------------------------------------------
+
+# Default Logger sl4j Configuration
+logging.level.org.springframework=INFO
+logging.level.com.app=DEBUG
+logging.pattern.console=%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n
+logging.file.name==logs
+logging.file.path==${logging.file.name}/log.log
+logging.pattern.file=%d{dd-MM-yyyy  HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n
+
 
 
 
