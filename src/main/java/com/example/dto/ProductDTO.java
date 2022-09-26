@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -26,8 +28,10 @@ public class ProductDTO {
 	
 	private String productDesc;
 	private String productCost;
-	//@Size(min = 5,max = 10,message = "product count should be between 5 to 10." )
-	private int productCount;
+	
+	@Min(value = 2, message = "product count can't be less then 2")
+	@Max(value = 10, message = "product count can't be greater then 10")
+	private Integer productCount;
 	
 	public ProductDTO() {
 	}

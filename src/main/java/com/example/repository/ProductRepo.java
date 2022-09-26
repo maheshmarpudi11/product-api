@@ -15,4 +15,7 @@ public interface ProductRepo extends JpaRepository<ProductDTO,Integer>{
 	@Query(value = "from ProductDTO p where p.productName = :pName")
 	public List<ProductDTO> searchByProductName(@Param("pName") String pName);
 
+	
+	public List<ProductDTO> findByProductNameOrderByProductId(String pName);
+	
 }

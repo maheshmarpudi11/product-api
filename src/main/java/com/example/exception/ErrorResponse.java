@@ -1,14 +1,12 @@
 package com.example.exception;
 
-import java.util.List;
 import java.util.Map;
 
 public class ErrorResponse {
 
 	private String errorCode;
 	private String errorDesc;
-	private List<String> errrors;
-	private Map<String, String> maperrrors;
+	private Map<String, String> errrors;
 
 	public ErrorResponse() {
 
@@ -30,20 +28,12 @@ public class ErrorResponse {
 		this.errorDesc = errorDesc;
 	}
 
-	public List<String> getErrrors() {
+	public Map<String, String> getErrrors() {
 		return errrors;
 	}
 
-	public void setErrrors(List<String> errrors) {
+	public void setMaperrrors(Map<String, String> errrors) {
 		this.errrors = errrors;
-	}
-
-	public Map<String, String> getMaperrrors() {
-		return maperrrors;
-	}
-
-	public void setMaperrrors(Map<String, String> maperrrors) {
-		this.maperrrors = maperrrors;
 	}
 
 }
