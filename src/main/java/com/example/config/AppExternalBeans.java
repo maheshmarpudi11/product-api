@@ -16,4 +16,5 @@ public class AppExternalBeans {
 	public String getValue() {
 		return environment;
 	}
+	
 }

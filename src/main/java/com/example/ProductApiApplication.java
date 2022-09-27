@@ -12,10 +12,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.example.config.ApplicationBeansConfig;
 import com.example.config.beans.DataSource;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 
 @SpringBootApplication
-@EnableSwagger2
+@OpenAPIDefinition(info = @Info(title = "Product API", version = "1.0", description = "Product Information"))
 public class ProductApiApplication  implements CommandLineRunner
 {
 	static Logger logger = LoggerFactory.getLogger(ProductApiApplication.class);

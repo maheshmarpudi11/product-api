@@ -57,7 +57,7 @@ URL : http://localhost:9090/product/newProduct
 		</dependency>
 
 2. Add Bean validation annotations in Bean class
-		@NotNull, @NotEmpty, @Email 
+		@NotNull, @NotEmpty, @Email, @Size, @Min, @Max
 
 3. Add @Valid Annotation in controller 
 
@@ -73,6 +73,66 @@ logging.pattern.console=%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlig
 logging.file.name==logs
 logging.file.path==${logging.file.name}/log.log
 logging.pattern.file=%d{dd-MM-yyyy  HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n
+
+
+------------------ AOP Implementation ------------------------------------------
+
+1. Create new Aspect class and implement logging for application.
+
+
+------------------ Actuator Implementation -------------------------------------
+
+1. Add below dependency in pom.xml
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+2. Add below properties in application.properties
+
+	management.endpoints.web.exposure.include=*
+	#management.endpoint.shutdown.enabled=true
+	management.endpoint.info.enabled=false
+	
+3. Check the default end-points with the below url
+	
+		http://localhost:9090/actuator
+		
+
+----------------------- Swagger3 Implementation ----------------------------------------
+1. Add below dependency in pom.xml
+
+		<!-- Swagger UI -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.2.32</version>
+		</dependency>
+
+
+2. Add below Annotation 
+
+		@OpenAPIDefinition(info = @Info(title = "Product API", version = "1.0", 
+		description = "Product Information"))
+		
+		
+3. Try below URL to access swagger ui
+		
+		 http://localhost:8080/swagger-ui.html 
+		 
+------------------------------------------------------------------------------------------
+		 
+		 
+
+
+
+
+
+
+
+
+
 
 
 
