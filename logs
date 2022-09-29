@@ -1,170 +1,41 @@
-28-09-2022  11:07:13.693 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 12284 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
-28-09-2022  11:07:13.700 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
-28-09-2022  11:07:13.701 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-28-09-2022  11:07:13.780 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-28-09-2022  11:07:13.781 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-28-09-2022  11:07:14.939 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-28-09-2022  11:07:15.018 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
-28-09-2022  11:07:16.031 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
-28-09-2022  11:07:16.045 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-28-09-2022  11:07:16.046 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
-28-09-2022  11:07:16.353 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-28-09-2022  11:07:16.365 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-28-09-2022  11:07:16.366 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2585 ms
-28-09-2022  11:07:16.560 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
-28-09-2022  11:07:16.805 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
-28-09-2022  11:07:16.811 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-28-09-2022  11:07:17.136 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-28-09-2022  11:07:17.247 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
-28-09-2022  11:07:17.549 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-28-09-2022  11:07:17.724 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-28-09-2022  11:07:18.369 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-28-09-2022  11:07:18.379 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-28-09-2022  11:07:18.406 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
-28-09-2022  11:07:18.433 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$38f455a9:getDataSource: Before Method Execution
-28-09-2022  11:07:18.449 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$38f455a9:getDataSource: After Method Execution
-28-09-2022  11:07:18.465 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1dcfcccb:getValue: Before Method Execution
-28-09-2022  11:07:18.472 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1dcfcccb:getValue: After Method Execution
-28-09-2022  11:07:18.482 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$38f455a9:getDataSource: Before Method Execution
-28-09-2022  11:07:18.484 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$38f455a9:getDataSource: After Method Execution
-28-09-2022  11:07:19.298 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-28-09-2022  11:07:19.397 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-28-09-2022  11:07:20.748 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
-28-09-2022  11:07:20.875 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
-28-09-2022  11:07:20.879 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 7.717 seconds (JVM running for 8.276)
-28-09-2022  11:07:20.941 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$105ae5ed:run: Before Method Execution
-28-09-2022  11:07:20.962 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$105ae5ed:run: After Method Execution
-28-09-2022  11:07:20.963 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
-28-09-2022  11:07:40.368 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-28-09-2022  11:07:40.368 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-28-09-2022  11:07:40.383 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 15 ms
-28-09-2022  11:07:41.070 [http-nio-9090-exec-8] INFO  o.s.api.AbstractOpenApiResource.getOpenApi - Init duration for springdoc-openapi is: 267 ms
-28-09-2022  11:08:43.291 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:searchProductByname: Before Method Execution
-28-09-2022  11:08:43.317 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:searchProductByname: Before Method Execution
-28-09-2022  11:08:43.321 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:searchByProductName: Before Method Execution
-28-09-2022  11:08:43.363 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:searchByProductName: After Method Execution
-28-09-2022  11:08:43.363 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:searchProductByname: After Method Execution
-28-09-2022  11:08:43.365 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:searchProductByname: After Method Execution
-28-09-2022  11:09:27.215 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:createProduct: Before Method Execution
-28-09-2022  11:09:27.218 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:createProduct: Before Method Execution
-28-09-2022  11:09:27.220 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:save: Before Method Execution
-28-09-2022  11:09:27.281 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:save: After Method Execution
-28-09-2022  11:09:27.281 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:createProduct: After Method Execution
-28-09-2022  11:09:27.302 [http-nio-9090-exec-4] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:createProduct: After Method Execution
-28-09-2022  11:09:54.687 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:searchProductByname: Before Method Execution
-28-09-2022  11:09:54.687 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:searchProductByname: Before Method Execution
-28-09-2022  11:09:54.688 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:searchByProductName: Before Method Execution
-28-09-2022  11:09:54.693 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy134:searchByProductName: After Method Execution
-28-09-2022  11:09:54.694 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:searchProductByname: After Method Execution
-28-09-2022  11:09:54.695 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:searchProductByname: After Method Execution
-28-09-2022  11:18:10.671 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
-28-09-2022  11:18:10.673 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
-28-09-2022  11:18:10.892 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-28-09-2022  11:18:10.892 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
-28-09-2022  11:18:10.894 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
-28-09-2022  11:18:10.954 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : starts
-28-09-2022  11:20:51.704 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 15908 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
-28-09-2022  11:20:51.706 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
-28-09-2022  11:20:51.707 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-28-09-2022  11:20:51.774 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-28-09-2022  11:20:51.775 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-28-09-2022  11:20:52.792 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-28-09-2022  11:20:52.857 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 58ms. Found 1 JPA repository interfaces.
-28-09-2022  11:20:53.808 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
-28-09-2022  11:20:53.823 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-28-09-2022  11:20:53.824 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
-28-09-2022  11:20:54.138 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-28-09-2022  11:20:54.148 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-28-09-2022  11:20:54.148 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2373 ms
-28-09-2022  11:20:54.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
-28-09-2022  11:20:54.607 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
-28-09-2022  11:20:54.619 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-28-09-2022  11:20:54.884 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-28-09-2022  11:20:54.971 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
-28-09-2022  11:20:55.209 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-28-09-2022  11:20:55.339 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-28-09-2022  11:20:56.021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-28-09-2022  11:20:56.027 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-28-09-2022  11:20:56.053 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
-28-09-2022  11:20:56.076 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: Before Method Execution
-28-09-2022  11:20:56.093 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: After Method Execution
-28-09-2022  11:20:56.112 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1cec5366:getValue: Before Method Execution
-28-09-2022  11:20:56.123 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1cec5366:getValue: After Method Execution
-28-09-2022  11:20:56.132 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: Before Method Execution
-28-09-2022  11:20:56.133 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: After Method Execution
-28-09-2022  11:20:56.887 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-28-09-2022  11:20:56.999 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-28-09-2022  11:20:58.284 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
-
-Using generated security password: f6534dd6-adba-409a-b02a-7097f5c6b8af
-
-28-09-2022  11:20:58.403 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7880c006, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a63c514, org.springframework.security.web.header.HeaderWriterFilter@58d4b60b, org.springframework.security.web.csrf.CsrfFilter@2b08b68e, org.springframework.security.web.authentication.logout.LogoutFilter@3c3fe206, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10a7291a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5556a84, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4dc53a52, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61e9f7ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4397a0b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57905b7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69f1c091, org.springframework.security.web.session.SessionManagementFilter@65827b55, org.springframework.security.web.access.ExceptionTranslationFilter@212068ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f30f0]
-28-09-2022  11:20:58.479 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
-28-09-2022  11:20:58.632 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
-28-09-2022  11:20:58.637 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 7.328 seconds (JVM running for 7.841)
-28-09-2022  11:20:58.690 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$f776c88:run: Before Method Execution
-28-09-2022  11:20:58.706 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$f776c88:run: After Method Execution
-28-09-2022  11:20:58.707 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
-28-09-2022  11:21:18.959 [http-nio-9090-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-28-09-2022  11:21:18.959 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-28-09-2022  11:21:18.968 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 9 ms
-28-09-2022  11:21:36.671 [http-nio-9090-exec-4] INFO  o.s.api.AbstractOpenApiResource.getOpenApi - Init duration for springdoc-openapi is: 283 ms
-28-09-2022  11:22:50.667 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
-28-09-2022  11:22:50.668 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
-28-09-2022  11:22:50.879 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-28-09-2022  11:22:50.880 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
-28-09-2022  11:22:50.881 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
-28-09-2022  11:22:50.952 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : starts
-28-09-2022  11:22:50.977 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 15908 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
-28-09-2022  11:22:50.977 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
-28-09-2022  11:22:50.977 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-28-09-2022  11:22:51.317 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-28-09-2022  11:22:51.326 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
-28-09-2022  11:22:51.480 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
-28-09-2022  11:22:51.481 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-28-09-2022  11:22:51.481 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
-28-09-2022  11:22:51.589 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-28-09-2022  11:22:51.591 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-28-09-2022  11:22:51.591 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 611 ms
-28-09-2022  11:22:51.641 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Starting...
-28-09-2022  11:22:51.644 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Start completed.
-28-09-2022  11:22:51.645 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-28-09-2022  11:22:51.730 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-28-09-2022  11:22:51.735 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-28-09-2022  11:22:51.791 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-28-09-2022  11:22:51.792 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-28-09-2022  11:22:51.799 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
-28-09-2022  11:22:51.807 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: Before Method Execution
-28-09-2022  11:22:51.811 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: After Method Execution
-28-09-2022  11:22:51.824 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1cec5366:getValue: Before Method Execution
-28-09-2022  11:22:51.828 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$1cec5366:getValue: After Method Execution
-28-09-2022  11:22:51.832 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: Before Method Execution
-28-09-2022  11:22:51.832 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$3810dc44:getDataSource: After Method Execution
-28-09-2022  11:22:52.008 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-28-09-2022  11:22:52.058 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-28-09-2022  11:22:52.601 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26e9da26, org.springframework.security.web.context.SecurityContextPersistenceFilter@749faab2, org.springframework.security.web.header.HeaderWriterFilter@38835953, org.springframework.security.web.csrf.CsrfFilter@4d3f31ce, org.springframework.security.web.authentication.logout.LogoutFilter@67fc42ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6153fd3d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6097168, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@711a8e15, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21743857, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@367bc4ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14905af6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f5e3f1e, org.springframework.security.web.session.SessionManagementFilter@409a522e, org.springframework.security.web.access.ExceptionTranslationFilter@6314365c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5200a49a]
-28-09-2022  11:22:52.636 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
-28-09-2022  11:22:52.656 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
-28-09-2022  11:22:52.657 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 1.7 seconds (JVM running for 121.86)
-28-09-2022  11:22:52.658 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$f776c88:run: Before Method Execution
-28-09-2022  11:22:52.667 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$f776c88:run: After Method Execution
-28-09-2022  11:22:52.668 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent - Condition evaluation unchanged
-28-09-2022  11:22:52.669 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
-28-09-2022  11:23:03.182 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-28-09-2022  11:23:03.182 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-28-09-2022  11:23:03.188 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 5 ms
-28-09-2022  11:23:03.375 [http-nio-9090-exec-4] INFO  o.s.api.AbstractOpenApiResource.getOpenApi - Init duration for springdoc-openapi is: 48 ms
-28-09-2022  11:23:36.630 [http-nio-9090-exec-9] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.HomeController:home: Before Method Execution
-28-09-2022  11:23:36.633 [http-nio-9090-exec-9] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.HomeController:home: After Method Execution
-28-09-2022  11:23:45.060 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.BookController:getBooks: Before Method Execution
-28-09-2022  11:23:45.069 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.service.BookService:listOfBooks: Before Method Execution
-28-09-2022  11:23:45.072 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.repository.BookRepository:findAll: Before Method Execution
-28-09-2022  11:23:45.078 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.repository.BookRepository:findAll: After Method Execution
-28-09-2022  11:23:45.079 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.service.BookService:listOfBooks: After Method Execution
-28-09-2022  11:23:45.079 [http-nio-9090-exec-2] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.BookController:getBooks: After Method Execution
-28-09-2022  11:23:48.924 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.BookController:getBookById: Before Method Execution
-28-09-2022  11:23:48.926 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.service.BookService:findBookById: Before Method Execution
-28-09-2022  11:23:48.926 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.repository.BookRepository:findById: Before Method Execution
-28-09-2022  11:23:48.926 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.repository.BookRepository:findById: After Method Execution
-28-09-2022  11:23:48.926 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.service.BookService:findBookById: After Method Execution
-28-09-2022  11:23:48.928 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ui.controller.BookController:getBookById: After Method Execution
+29-09-2022  11:16:27.547 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 11792 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+29-09-2022  11:16:27.552 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+29-09-2022  11:16:27.553 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-09-2022  11:16:27.625 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+29-09-2022  11:16:27.626 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+29-09-2022  11:16:28.683 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+29-09-2022  11:16:28.748 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
+29-09-2022  11:16:29.647 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+29-09-2022  11:16:29.658 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-09-2022  11:16:29.658 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+29-09-2022  11:16:29.920 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-09-2022  11:16:29.930 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-09-2022  11:16:29.931 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2305 ms
+29-09-2022  11:16:30.088 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+29-09-2022  11:16:30.292 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+29-09-2022  11:16:30.299 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+29-09-2022  11:16:30.609 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+29-09-2022  11:16:30.692 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+29-09-2022  11:16:30.932 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+29-09-2022  11:16:31.071 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+29-09-2022  11:16:31.744 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29-09-2022  11:16:31.750 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+29-09-2022  11:16:31.778 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+29-09-2022  11:16:31.803 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: Before Method Execution
+29-09-2022  11:16:31.815 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: After Method Execution
+29-09-2022  11:16:31.830 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$55babcee:getValue: Before Method Execution
+29-09-2022  11:16:31.836 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$55babcee:getValue: After Method Execution
+29-09-2022  11:16:31.844 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: Before Method Execution
+29-09-2022  11:16:31.844 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: After Method Execution
+29-09-2022  11:16:31.982 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+29-09-2022  11:16:32.899 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@489bf0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e687750, org.springframework.security.web.header.HeaderWriterFilter@13818a31, org.springframework.security.web.authentication.logout.LogoutFilter@2af0816b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@743f484b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44f5988c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a890149, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1973805e, org.springframework.security.web.session.SessionManagementFilter@77009140, org.springframework.security.web.access.ExceptionTranslationFilter@4a4d49f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b2b1368]
+29-09-2022  11:16:33.004 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+29-09-2022  11:16:34.094 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
+29-09-2022  11:16:34.237 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+29-09-2022  11:16:34.241 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 7.304 seconds (JVM running for 7.869)
+29-09-2022  11:16:34.293 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$4845d610:run: Before Method Execution
+29-09-2022  11:16:34.303 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$4845d610:run: After Method Execution
+29-09-2022  11:16:34.304 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
+29-09-2022  11:17:03.848 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29-09-2022  11:17:03.848 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+29-09-2022  11:17:03.868 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 20 ms

@@ -73,6 +73,4 @@ public class ProductApiApplication  implements CommandLineRunner
 		
 	}
 	
-	
-
 }
