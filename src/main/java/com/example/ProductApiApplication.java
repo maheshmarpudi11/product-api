@@ -11,6 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.example.config.ApplicationBeansConfig;
 import com.example.config.beans.DataSource;
+import com.example.service.ThirdPartyProductService;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
@@ -57,6 +58,9 @@ public class ProductApiApplication  implements CommandLineRunner
 	  @Autowired 
 	  private String env;
 	 	 
+	  @Autowired
+	  private ThirdPartyProductService thirdPartyProductService;
+	  
 	 
 	@Override
 	public void run(String... args) throws Exception {
@@ -70,6 +74,10 @@ public class ProductApiApplication  implements CommandLineRunner
 		DataSource dataSource2 = context.getBean(DataSource.class);
 		System.out.println(dataSource1.toString());
 		System.out.println(dataSource2.toString());
+		
+	
+		System.out.println("thirdPartyProductService.getAllProducts() -> "+ thirdPartyProductService.getAllProducts());
+		
 		
 	}
 	

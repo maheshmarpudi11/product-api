@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
+import org.springframework.web.client.RestTemplate;
 
 import com.example.config.beans.DataSource;
 
@@ -33,6 +34,10 @@ public class ApplicationBeansConfig {
 		return dataSource;
 	}
 	
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+	}
 	
 	
 }

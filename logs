@@ -1,41 +1,603 @@
-29-09-2022  11:16:27.547 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 11792 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
-29-09-2022  11:16:27.552 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
-29-09-2022  11:16:27.553 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-29-09-2022  11:16:27.625 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-29-09-2022  11:16:27.626 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-29-09-2022  11:16:28.683 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-29-09-2022  11:16:28.748 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
-29-09-2022  11:16:29.647 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
-29-09-2022  11:16:29.658 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-29-09-2022  11:16:29.658 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
-29-09-2022  11:16:29.920 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-29-09-2022  11:16:29.930 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-29-09-2022  11:16:29.931 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2305 ms
-29-09-2022  11:16:30.088 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
-29-09-2022  11:16:30.292 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
-29-09-2022  11:16:30.299 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-29-09-2022  11:16:30.609 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-29-09-2022  11:16:30.692 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
-29-09-2022  11:16:30.932 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-29-09-2022  11:16:31.071 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-29-09-2022  11:16:31.744 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-29-09-2022  11:16:31.750 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-29-09-2022  11:16:31.778 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
-29-09-2022  11:16:31.803 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: Before Method Execution
-29-09-2022  11:16:31.815 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: After Method Execution
-29-09-2022  11:16:31.830 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$55babcee:getValue: Before Method Execution
-29-09-2022  11:16:31.836 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$55babcee:getValue: After Method Execution
-29-09-2022  11:16:31.844 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: Before Method Execution
-29-09-2022  11:16:31.844 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$70df45cc:getDataSource: After Method Execution
-29-09-2022  11:16:31.982 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-29-09-2022  11:16:32.899 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@489bf0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e687750, org.springframework.security.web.header.HeaderWriterFilter@13818a31, org.springframework.security.web.authentication.logout.LogoutFilter@2af0816b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@743f484b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44f5988c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a890149, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1973805e, org.springframework.security.web.session.SessionManagementFilter@77009140, org.springframework.security.web.access.ExceptionTranslationFilter@4a4d49f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b2b1368]
-29-09-2022  11:16:33.004 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-29-09-2022  11:16:34.094 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
-29-09-2022  11:16:34.237 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
-29-09-2022  11:16:34.241 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 7.304 seconds (JVM running for 7.869)
-29-09-2022  11:16:34.293 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$4845d610:run: Before Method Execution
-29-09-2022  11:16:34.303 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$4845d610:run: After Method Execution
-29-09-2022  11:16:34.304 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
-29-09-2022  11:17:03.848 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-29-09-2022  11:17:03.848 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-29-09-2022  11:17:03.868 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 20 ms
+03-10-2022  11:35:22.705 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 15780 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:35:22.713 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:35:22.714 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:35:22.824 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03-10-2022  11:35:22.825 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03-10-2022  11:35:24.322 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:35:24.406 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 71ms. Found 1 JPA repository interfaces.
+03-10-2022  11:35:25.687 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:35:25.704 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:35:25.704 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:35:26.160 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:35:26.175 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:35:26.175 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3349 ms
+03-10-2022  11:35:26.447 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+03-10-2022  11:35:26.774 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+03-10-2022  11:35:26.781 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:35:27.168 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:35:27.397 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+03-10-2022  11:35:27.673 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03-10-2022  11:35:27.861 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:35:28.665 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:35:28.672 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:35:28.707 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:35:28.744 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$33e3d1a5:getDataSource: Before Method Execution
+03-10-2022  11:35:28.761 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$33e3d1a5:getDataSource: After Method Execution
+03-10-2022  11:35:28.785 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$18bf48c7:getValue: Before Method Execution
+03-10-2022  11:35:28.800 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$18bf48c7:getValue: After Method Execution
+03-10-2022  11:35:28.832 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$33e3d1a5:getDataSource: Before Method Execution
+03-10-2022  11:35:28.832 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$33e3d1a5:getDataSource: After Method Execution
+03-10-2022  11:35:29.175 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:35:30.101 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thirdPartyProductService': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+03-10-2022  11:35:30.102 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:35:30.310 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:35:30.311 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+03-10-2022  11:35:30.314 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+03-10-2022  11:35:30.317 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+03-10-2022  11:35:30.338 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-10-2022  11:35:30.507 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.example.service.ThirdPartyProductService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+03-10-2022  11:37:56.006 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 17812 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:37:56.011 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:37:56.013 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:37:56.130 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03-10-2022  11:37:56.131 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03-10-2022  11:37:57.241 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:37:57.315 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 64ms. Found 1 JPA repository interfaces.
+03-10-2022  11:37:58.585 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:37:58.598 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:37:58.599 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:37:58.919 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:37:58.932 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:37:58.932 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2801 ms
+03-10-2022  11:37:59.162 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+03-10-2022  11:37:59.420 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+03-10-2022  11:37:59.429 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:37:59.763 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:37:59.855 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+03-10-2022  11:38:00.023 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03-10-2022  11:38:00.221 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:38:01.084 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:38:01.090 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:38:01.123 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:38:01.155 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getDataSource: Before Method Execution
+03-10-2022  11:38:01.170 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getDataSource: After Method Execution
+03-10-2022  11:38:01.189 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7cd6e543:getValue: Before Method Execution
+03-10-2022  11:38:01.194 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7cd6e543:getValue: After Method Execution
+03-10-2022  11:38:01.204 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getDataSource: Before Method Execution
+03-10-2022  11:38:01.204 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getDataSource: After Method Execution
+03-10-2022  11:38:01.431 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:38:02.495 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getRestTemplate: Before Method Execution
+03-10-2022  11:38:02.509 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$97fb6e21:getRestTemplate: After Method Execution
+03-10-2022  11:38:03.196 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@418df097, org.springframework.security.web.context.SecurityContextPersistenceFilter@52087701, org.springframework.security.web.header.HeaderWriterFilter@44c33028, org.springframework.security.web.authentication.logout.LogoutFilter@26e24165, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@450ecbb7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d831fdb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5255ecc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15154118, org.springframework.security.web.session.SessionManagementFilter@772383f2, org.springframework.security.web.access.ExceptionTranslationFilter@1b93befa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a0a0a5]
+03-10-2022  11:38:03.363 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:38:05.303 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
+03-10-2022  11:38:05.475 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+03-10-2022  11:38:05.481 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 9.946 seconds (JVM running for 10.618)
+03-10-2022  11:38:05.593 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$6f61fe65:run: Before Method Execution
+03-10-2022  11:38:05.622 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-10-2022  11:38:05.631 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.ProductApiApplication.main(ProductApiApplication.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.example.service.ThirdPartyProductService.getAllProducts()" because "this.thirdPartyProductService" is null
+	at com.example.ProductApiApplication.run(ProductApiApplication.java:78)
+	at com.example.ProductApiApplication$$FastClassBySpringCGLIB$$7b60a854.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.example.config.LoggingAspect.logAroundAllMethods(LoggingAspect.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$47990948.run(<generated>)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	... 10 common frames omitted
+03-10-2022  11:38:05.638 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:38:05.639 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:38:05.857 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:38:05.859 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+03-10-2022  11:38:05.861 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+03-10-2022  11:39:15.291 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 12408 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:39:15.296 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:39:15.296 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:39:15.446 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03-10-2022  11:39:15.447 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03-10-2022  11:39:16.663 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:39:16.758 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 86ms. Found 1 JPA repository interfaces.
+03-10-2022  11:39:17.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:39:18.001 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:39:18.001 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:39:18.351 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:39:18.365 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:39:18.365 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2917 ms
+03-10-2022  11:39:18.640 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+03-10-2022  11:39:18.882 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+03-10-2022  11:39:18.893 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:39:19.262 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:39:19.338 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+03-10-2022  11:39:19.567 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03-10-2022  11:39:19.740 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:39:20.548 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:39:20.557 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:39:20.590 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:39:20.625 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getDataSource: Before Method Execution
+03-10-2022  11:39:20.647 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getDataSource: After Method Execution
+03-10-2022  11:39:20.665 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$f5f984bb:getValue: Before Method Execution
+03-10-2022  11:39:20.673 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$f5f984bb:getValue: After Method Execution
+03-10-2022  11:39:20.687 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getRestTemplate: Before Method Execution
+03-10-2022  11:39:20.696 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getRestTemplate: After Method Execution
+03-10-2022  11:39:20.735 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getDataSource: Before Method Execution
+03-10-2022  11:39:20.736 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$111e0d99:getDataSource: After Method Execution
+03-10-2022  11:39:21.018 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:39:22.706 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78531edb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e026080, org.springframework.security.web.header.HeaderWriterFilter@78486730, org.springframework.security.web.authentication.logout.LogoutFilter@134581f9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f724d59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59fcf428, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45019cb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12122e31, org.springframework.security.web.session.SessionManagementFilter@2b752d2f, org.springframework.security.web.access.ExceptionTranslationFilter@1be30415, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b972c3b]
+03-10-2022  11:39:22.875 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:39:24.683 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
+03-10-2022  11:39:24.820 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+03-10-2022  11:39:24.823 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 10.052 seconds (JVM running for 10.729)
+03-10-2022  11:39:24.886 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$e8849ddd:run: Before Method Execution
+03-10-2022  11:39:24.909 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ThirdPartyProductService:getAllProducts: Before Method Execution
+03-10-2022  11:39:25.172 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-10-2022  11:39:25.172 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+03-10-2022  11:39:25.192 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 20 ms
+03-10-2022  11:39:25.333 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-10-2022  11:39:25.339 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.ProductApiApplication.main(ProductApiApplication.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 : [{"timestamp":"2022-10-03T06:09:25.260+0000","status":401,"error":"Unauthorized","message":"Full authentication is required to access this resource","path":"/product/products"}]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:583)
+	at com.example.service.ThirdPartyProductService.getAllProducts(ThirdPartyProductService.java:48)
+	at com.example.service.ThirdPartyProductService$$FastClassBySpringCGLIB$$da34196f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.example.config.LoggingAspect.logAroundAllMethods(LoggingAspect.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.service.ThirdPartyProductService$$EnhancerBySpringCGLIB$$a66cea07.getAllProducts(<generated>)
+	at com.example.ProductApiApplication.run(ProductApiApplication.java:79)
+	at com.example.ProductApiApplication$$FastClassBySpringCGLIB$$7b60a854.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.example.config.LoggingAspect.logAroundAllMethods(LoggingAspect.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$777fc199.run(<generated>)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	... 10 common frames omitted
+03-10-2022  11:39:25.344 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:39:25.345 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:39:25.556 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:39:25.558 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+03-10-2022  11:39:25.561 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+03-10-2022  11:41:08.575 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 7052 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:41:08.577 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:41:08.577 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:41:08.657 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03-10-2022  11:41:08.657 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03-10-2022  11:41:10.053 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:41:10.123 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 61ms. Found 1 JPA repository interfaces.
+03-10-2022  11:41:11.339 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:41:11.352 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:41:11.352 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:41:11.784 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:41:11.796 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:41:11.800 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3142 ms
+03-10-2022  11:41:12.068 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+03-10-2022  11:41:12.358 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+03-10-2022  11:41:12.369 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:41:12.659 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:41:12.738 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+03-10-2022  11:41:12.955 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03-10-2022  11:41:13.112 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:41:13.897 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:41:13.904 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:41:13.931 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:41:13.961 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: Before Method Execution
+03-10-2022  11:41:13.981 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: After Method Execution
+03-10-2022  11:41:14.005 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$2981f81c:getValue: Before Method Execution
+03-10-2022  11:41:14.020 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$2981f81c:getValue: After Method Execution
+03-10-2022  11:41:14.035 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getRestTemplate: Before Method Execution
+03-10-2022  11:41:14.043 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getRestTemplate: After Method Execution
+03-10-2022  11:41:14.090 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: Before Method Execution
+03-10-2022  11:41:14.090 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: After Method Execution
+03-10-2022  11:41:14.366 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:41:16.430 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69073366, org.springframework.security.web.context.SecurityContextPersistenceFilter@e808ed7, org.springframework.security.web.header.HeaderWriterFilter@708f57db, org.springframework.security.web.authentication.logout.LogoutFilter@3d6c0062, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@618bff73, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a042323, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3137bbee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@357db11a, org.springframework.security.web.session.SessionManagementFilter@158324b6, org.springframework.security.web.access.ExceptionTranslationFilter@25b5656d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@467ca4ea]
+03-10-2022  11:41:16.608 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:41:18.347 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
+03-10-2022  11:41:18.504 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+03-10-2022  11:41:18.509 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 10.438 seconds (JVM running for 11.107)
+03-10-2022  11:41:18.578 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$1c0d113e:run: Before Method Execution
+03-10-2022  11:41:18.602 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ThirdPartyProductService:getAllProducts: Before Method Execution
+03-10-2022  11:41:18.750 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-10-2022  11:41:18.751 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+03-10-2022  11:41:18.770 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 19 ms
+03-10-2022  11:41:19.074 [http-nio-9090-exec-1] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:getAllProducts: Before Method Execution
+03-10-2022  11:41:19.108 [http-nio-9090-exec-1] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:getAllProducts: Before Method Execution
+03-10-2022  11:41:19.182 [http-nio-9090-exec-1] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:getAllProducts: After Method Execution
+03-10-2022  11:41:19.183 [http-nio-9090-exec-1] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:getAllProducts: After Method Execution
+03-10-2022  11:41:19.235 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ThirdPartyProductService:getAllProducts: After Method Execution
+03-10-2022  11:41:19.235 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$1c0d113e:run: After Method Execution
+03-10-2022  11:41:19.236 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
+03-10-2022  11:42:26.015 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:42:26.017 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:42:26.226 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:42:26.227 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+03-10-2022  11:42:26.232 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+03-10-2022  11:42:26.314 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : starts
+03-10-2022  11:42:26.399 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 7052 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:42:26.399 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:42:26.400 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:42:26.883 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:42:26.904 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 19ms. Found 1 JPA repository interfaces.
+03-10-2022  11:42:27.162 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:42:27.164 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:42:27.165 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:42:27.272 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:42:27.275 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:42:27.276 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 872 ms
+03-10-2022  11:42:27.362 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Starting...
+03-10-2022  11:42:27.365 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Start completed.
+03-10-2022  11:42:27.365 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:42:27.472 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:42:27.476 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:42:27.567 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:42:27.568 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:42:27.581 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:42:27.592 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: Before Method Execution
+03-10-2022  11:42:27.598 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: After Method Execution
+03-10-2022  11:42:27.614 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$2981f81c:getValue: Before Method Execution
+03-10-2022  11:42:27.618 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$2981f81c:getValue: After Method Execution
+03-10-2022  11:42:27.685 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getRestTemplate: Before Method Execution
+03-10-2022  11:42:27.688 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getRestTemplate: After Method Execution
+03-10-2022  11:42:27.700 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: Before Method Execution
+03-10-2022  11:42:27.701 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$44a680fa:getDataSource: After Method Execution
+03-10-2022  11:42:27.795 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:42:27.963 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+03-10-2022  11:42:27.964 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:42:28.173 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:42:28.173 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown initiated...
+03-10-2022  11:42:28.175 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown completed.
+03-10-2022  11:42:28.179 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+03-10-2022  11:42:28.192 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-10-2022  11:42:28.198 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at com.example.ProductApiApplication.main(ProductApiApplication.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:558) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:363) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.reflect.FastClass$Generator.create(FastClass.java:65) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.helper(MethodProxy.java:135) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.init(MethodProxy.java:76) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:216) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at com.example.config.SecurityConfig$$EnhancerBySpringCGLIB$$125c0829.init(<generated>) ~[classes/:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.LinkageError: loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at java.base/java.lang.ClassLoader.defineClass0(Native Method) ~[na:na]
+	at java.base/java.lang.System$2.defineClass(System.java:2307) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2439) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2416) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup.defineClass(MethodHandles.java:1843) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor60.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:555) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 57 common frames omitted
+03-10-2022  11:43:44.786 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 14236 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:43:44.789 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:43:44.789 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:43:44.872 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03-10-2022  11:43:44.872 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03-10-2022  11:43:45.879 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:43:45.940 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+03-10-2022  11:43:46.955 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:43:46.969 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:43:46.969 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:43:47.289 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:43:47.299 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:43:47.299 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2427 ms
+03-10-2022  11:43:47.502 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+03-10-2022  11:43:47.709 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+03-10-2022  11:43:47.718 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:43:47.981 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:43:48.053 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.17.Final
+03-10-2022  11:43:48.230 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03-10-2022  11:43:48.370 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:43:49.090 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:43:49.098 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:43:49.126 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:43:49.156 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: Before Method Execution
+03-10-2022  11:43:49.173 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: After Method Execution
+03-10-2022  11:43:49.192 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7f715dc1:getValue: Before Method Execution
+03-10-2022  11:43:49.200 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7f715dc1:getValue: After Method Execution
+03-10-2022  11:43:49.214 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getRestTemplate: Before Method Execution
+03-10-2022  11:43:49.220 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getRestTemplate: After Method Execution
+03-10-2022  11:43:49.244 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: Before Method Execution
+03-10-2022  11:43:49.245 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: After Method Execution
+03-10-2022  11:43:49.437 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:43:50.496 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@226229e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6306a6ad, org.springframework.security.web.header.HeaderWriterFilter@16d432e0, org.springframework.security.web.authentication.logout.LogoutFilter@6eded0ed, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13132a21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bf86f55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c1160e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@513780d0, org.springframework.security.web.session.SessionManagementFilter@11431e76, org.springframework.security.web.access.ExceptionTranslationFilter@7624ace0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@167fe5c0]
+03-10-2022  11:43:50.624 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:43:52.028 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 13 endpoint(s) beneath base path '/actuator'
+03-10-2022  11:43:52.155 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 9090 (http) with context path ''
+03-10-2022  11:43:52.160 [restartedMain] INFO  com.example.ProductApiApplication.logStarted - Started ProductApiApplication in 7.765 seconds (JVM running for 8.322)
+03-10-2022  11:43:52.218 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$71fc76e3:run: Before Method Execution
+03-10-2022  11:43:52.235 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ThirdPartyProductService:getAllProducts: Before Method Execution
+03-10-2022  11:43:52.343 [http-nio-9090-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-10-2022  11:43:52.344 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+03-10-2022  11:43:52.358 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 14 ms
+03-10-2022  11:43:52.584 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:getAllProducts: Before Method Execution
+03-10-2022  11:43:52.601 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:getAllProducts: Before Method Execution
+03-10-2022  11:43:52.652 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:getAllProducts: After Method Execution
+03-10-2022  11:43:52.653 [http-nio-9090-exec-3] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:getAllProducts: After Method Execution
+03-10-2022  11:43:52.693 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ThirdPartyProductService:getAllProducts: After Method Execution
+03-10-2022  11:43:52.695 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.ProductApiApplication$$EnhancerBySpringCGLIB$$71fc76e3:run: After Method Execution
+03-10-2022  11:43:52.696 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : ends
+03-10-2022  11:47:25.068 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:createProduct: Before Method Execution
+03-10-2022  11:47:25.072 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:createProduct: Before Method Execution
+03-10-2022  11:47:25.074 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy142:save: Before Method Execution
+03-10-2022  11:47:25.218 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class jdk.proxy3.$Proxy142:save: After Method Execution
+03-10-2022  11:47:25.219 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.service.ProductService:createProduct: After Method Execution
+03-10-2022  11:47:25.266 [http-nio-9090-exec-5] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.controller.ProductController:createProduct: After Method Execution
+03-10-2022  11:48:26.421 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+03-10-2022  11:48:26.422 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:48:26.631 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:48:26.632 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+03-10-2022  11:48:26.636 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+03-10-2022  11:48:26.742 [restartedMain] INFO  com.example.ProductApiApplication.main - ProductApiApplication -> main method : starts
+03-10-2022  11:48:26.774 [restartedMain] INFO  com.example.ProductApiApplication.logStarting - Starting ProductApiApplication on Mahesh with PID 14236 (D:\spring-boot-29-08-2022\product-api\target\classes started by mahes in D:\spring-boot-29-08-2022\product-api)
+03-10-2022  11:48:26.774 [restartedMain] DEBUG com.example.ProductApiApplication.logStarting - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+03-10-2022  11:48:26.774 [restartedMain] INFO  com.example.ProductApiApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-10-2022  11:48:27.248 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03-10-2022  11:48:27.263 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 15ms. Found 1 JPA repository interfaces.
+03-10-2022  11:48:27.533 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 9090 (http)
+03-10-2022  11:48:27.534 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-10-2022  11:48:27.535 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03-10-2022  11:48:27.712 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-10-2022  11:48:27.714 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-10-2022  11:48:27.714 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+03-10-2022  11:48:27.813 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Starting...
+03-10-2022  11:48:27.816 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Start completed.
+03-10-2022  11:48:27.817 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03-10-2022  11:48:27.936 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+03-10-2022  11:48:27.955 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03-10-2022  11:48:28.106 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03-10-2022  11:48:28.106 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:48:28.117 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+03-10-2022  11:48:28.128 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: Before Method Execution
+03-10-2022  11:48:28.143 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: After Method Execution
+03-10-2022  11:48:28.157 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7f715dc1:getValue: Before Method Execution
+03-10-2022  11:48:28.162 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.AppExternalBeans$$EnhancerBySpringCGLIB$$7f715dc1:getValue: After Method Execution
+03-10-2022  11:48:28.168 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getRestTemplate: Before Method Execution
+03-10-2022  11:48:28.171 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getRestTemplate: After Method Execution
+03-10-2022  11:48:28.197 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: Before Method Execution
+03-10-2022  11:48:28.197 [restartedMain] INFO  com.example.config.LoggingAspect.logAroundAllMethods - **** class com.example.config.ApplicationBeansConfig$$EnhancerBySpringCGLIB$$9a95e69f:getDataSource: After Method Execution
+03-10-2022  11:48:28.308 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03-10-2022  11:48:28.652 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+03-10-2022  11:48:28.653 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+03-10-2022  11:48:28.856 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter.destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+03-10-2022  11:48:28.856 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown initiated...
+03-10-2022  11:48:28.857 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown completed.
+03-10-2022  11:48:28.859 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+03-10-2022  11:48:28.871 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-10-2022  11:48:28.881 [restartedMain] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at com.example.ProductApiApplication.main(ProductApiApplication.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:558) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:363) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.reflect.FastClass$Generator.create(FastClass.java:65) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.helper(MethodProxy.java:135) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.init(MethodProxy.java:76) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:216) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at com.example.config.SecurityConfig$$EnhancerBySpringCGLIB$$1d023f11.init(<generated>) ~[classes/:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.LinkageError: loader 'app' attempted duplicate class definition for org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b. (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$$FastClassBySpringCGLIB$$432a6c3b is in unnamed module of loader 'app')
+	at java.base/java.lang.ClassLoader.defineClass0(Native Method) ~[na:na]
+	at java.base/java.lang.System$2.defineClass(System.java:2307) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2439) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2416) ~[na:na]
+	at java.base/java.lang.invoke.MethodHandles$Lookup.defineClass(MethodHandles.java:1843) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:555) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 57 common frames omitted
